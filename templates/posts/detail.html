@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+    <div class="col-md-6 offset-md-3">
+        <img src="{{post.image.url}}" alt="img" class="img-fluid">
+        <h1>{{ post.title}}<small class="text-muted">By{{post.author.username}} on {{post.publish}}</small></h1>
+    <p class="lead">{{post.body}}</p>
+    </div>
+</div>
+{% endblock content %}
